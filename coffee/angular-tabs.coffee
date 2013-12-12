@@ -18,7 +18,7 @@ angular.module("angular-tabs").directive "angularTabs", ["$compile", "angularTab
 
     for div in divs
       div = angular.element(div)
-      title = div.attr("title")
+      title = div.attr("tab-title")
       titles.push title
       div.attr("ng-show", "isActive('#{title}')")
 
