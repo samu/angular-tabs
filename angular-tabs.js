@@ -1,5 +1,5 @@
 // author:   Samuel Mueller 
-// version:  0.0.1 
+// version:  0.0.2 
 // license:  MIT 
 // homepage: http://github.com/ssmm/angular-tabs 
 (function() {
@@ -32,7 +32,7 @@
         for (_i = 0, _len = divs.length; _i < _len; _i++) {
           div = divs[_i];
           div = angular.element(div);
-          title = div.attr("title");
+          title = div.attr("tab-title");
           titles.push(title);
           div.attr("ng-show", "isActive('" + title + "')");
         }
